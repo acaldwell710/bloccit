@@ -2,13 +2,8 @@ require 'rails_helper'
 include RandomData
 
 RSpec.describe PostsController, type: :controller do
-let(:my_post) do
-  Post.create(
-  id: 1,
-  title: RandomData.random_sentence,
-  body: RandomData.random_paragraph
-  )
-  end
+
+let(:my_post) { Post.create!(title: RandomData.random_sentence, body: RandomData.random_paragraph) }
 
   describe "GET #index" do
     it "returns http success" do
