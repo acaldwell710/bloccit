@@ -1,9 +1,8 @@
 require 'rails_helper'
-include RandomData
 
 RSpec.describe PostsController, type: :controller do
 
-let(:my_post) { Post.create!(title: RandomData.random_sentence, body: RandomData.random_paragraph) }
+  let(:my_post) { Post.create!(title: RandomData.random_sentence, body: RandomData.random_paragraph) }
 
   describe "GET #index" do
     it "returns http success" do
@@ -36,33 +35,35 @@ let(:my_post) { Post.create!(title: RandomData.random_sentence, body: RandomData
 
   describe "POST create" do
     it "increases the number of Post by 1" do
-      expect{post :create, post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}}.to change(Post,:count).by(1)
+      expect{post :create, params: {post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}}}.to change(Post,:count).by(1)
+      # post :create, params: {post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}}
+      # expect(Post.count).to eq(1)
     end
 
     it "assigns the new post to @post" do
-      post :create, post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}
+      post :create, params: {post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}}
       expect(assigns(:post)).to eq Post.last
     end
 
     it "redirects to the new post" do
-      post :create, post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}
+      post :create, params: {post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}}
       expect(response).to redirect_to Post.last
     end
   end
 
   describe "GET show" do
     it "returns http success" do
-      get :show, {id: my_post.id}
+      get :show, params: {id: my_post.id}
       expect(response).to have_http_status(:success)
     end
 
     it "renders the #show view" do
-      get :show, {id: my_post.id}
+      get :show, params: {id: my_post.id}
       expect(response).to render_template :show
     end
 
     it "assigns my_post to @post" do
-      get :show, {id: my_post.id}
+      get :show, params: {id: my_post.id}
       expect(assigns(:post)).to eq(my_post)
     end
   end

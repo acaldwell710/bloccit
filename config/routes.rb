@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :advertisements
   resources :posts
+  resources :advertisements
 
   get 'about' => 'welcome#about'
 
