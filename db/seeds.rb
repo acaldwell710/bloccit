@@ -31,7 +31,7 @@ topics = Topic.all
  # Create Posts
  50.times do
  # #1
-   Post.create!(
+   post = Post.create!(
  # #2
     user:   users.sample,
     topic:  topics.sample,
@@ -39,6 +39,10 @@ topics = Topic.all
     body:   RandomData.random_paragraph
    )
  end
+
+ post.update_attribute(:created_at, rand(10.minutes .. 1.year).ago)
+ # #13
+   rand(1..5).times { post.votes.create!(value: [-1, 1].sample, user: users.sample) }
  posts = Post.all
 
  # Create Comments
@@ -71,3 +75,4 @@ topics = Topic.all
  puts "#{Topic.count} topics created"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
+ puts "#{Vote.count} votes created"
