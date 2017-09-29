@@ -49,6 +49,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'rails-controller-testing'
   gem 'shoulda'
+  gem 'factory_girl_rails', '~> 4.0'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
 #  gem 'web-console', '>= 3.3.0'
 #  gem 'listen', '>= 3.0.5', '< 3.2'
