@@ -44,6 +44,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'pg'
   gem 'sqlite3'
   gem 'listen'
   gem 'rspec-rails', '~> 3.0'
