@@ -81,34 +81,6 @@ GEM
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-<<<<<<< HEAD
-    mail (2.6.6)
-      mime-types (>= 1.16, < 4)
-    method_source (0.8.2)
-    mime-types (3.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    mini_portile2 (2.2.0)
-    minitest (5.10.2)
-    nio4r (2.1.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
-    pg (0.21.0)
-    rack (2.0.3)
-    rack-test (0.6.3)
-      rack (>= 1.0)
-    rails (5.1.2)
-      actioncable (= 5.1.2)
-      actionmailer (= 5.1.2)
-      actionpack (= 5.1.2)
-      actionview (= 5.1.2)
-      activejob (= 5.1.2)
-      activemodel (= 5.1.2)
-      activerecord (= 5.1.2)
-      activesupport (= 5.1.2)
-      bundler (>= 1.3.0, < 2.0)
-      railties (= 5.1.2)
-=======
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
@@ -132,7 +104,6 @@ GEM
       activesupport (= 5.1.6)
       bundler (>= 1.3.0)
       railties (= 5.1.6)
->>>>>>> 6e92fd8ea938899d95505f05e53ba2adf72f1707
       sprockets-rails (>= 2.0.0)
     rails-controller-testing (1.0.2)
       actionpack (~> 5.x, >= 5.0.1)
@@ -141,13 +112,8 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-<<<<<<< HEAD
-    rails-html-sanitizer (1.0.3)
-      loofah (~> 2.0)
-=======
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
->>>>>>> 6e92fd8ea938899d95505f05e53ba2adf72f1707
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
