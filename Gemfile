@@ -56,7 +56,7 @@ group :development, :test do
 #  gem 'spring'
 #  gem 'spring-watcher-listen', '~> 2.0.0'
 end
-gem 'sqlite3'
+gem 'sqlite3', '1.3.13'
 gem 'bootstrap-sass'
 
 # Used for encrypting User passwords
