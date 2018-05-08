@@ -44,6 +44,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'sqlite3', '1.3.13'
   gem 'listen'
   gem 'rspec-rails', '~> 3.0'
   gem 'rails-controller-testing'
@@ -56,7 +57,7 @@ group :development, :test do
 #  gem 'spring'
 #  gem 'spring-watcher-listen', '~> 2.0.0'
 end
-gem 'sqlite3', '1.3.13'
+
 gem 'bootstrap-sass'
 
 # Used for encrypting User passwords
