@@ -45,7 +45,7 @@ end
 
 group :development, :test do
   gem 'pg'
-  gem 'sqlite3'
+  gem 'sqlite3', '>= 1.3.10'
   gem 'listen'
   gem 'rspec-rails', '~> 3.0'
   gem 'rails-controller-testing'
