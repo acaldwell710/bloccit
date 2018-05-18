@@ -39,7 +39,7 @@ gem 'turbolinks', '~> 5'
 #  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 #end
 group :production do
-  gem 'pg', '~> 0.20'
+  gem 'pg', '< 1.0'
   gem 'rails_12factor'
 end
 

@@ -192,7 +192,7 @@ DEPENDENCIES
   figaro (= 1.0)
   jquery-rails
   listen
-  pg (~> 0.20)
+  pg (< 1.0)
   rails (~> 5.1.2)
   rails-controller-testing
   rails_12factor
