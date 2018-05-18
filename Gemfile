@@ -35,7 +35,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'listen'
   gem 'rspec-rails', '~> 3.0'
   gem 'rails-controller-testing'
   #gem 'shoulda'
